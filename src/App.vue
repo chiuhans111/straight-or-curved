@@ -6,6 +6,12 @@
       Tweet by @jagarikin
     </a>
   </p>
+  <p>
+    Repository:
+    <a href="https://github.com/chiuhans111/straight-or-curved">
+      github.com/chiuhans111/straight-or-curved
+    </a>
+  </p>
 </template>
 
 <script>
