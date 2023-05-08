@@ -1,5 +1,11 @@
 <template>
-  <HelloWorld/>
+  <HelloWorld />
+  <p>
+    Source of inspiration:
+    <a href="https://twitter.com/jagarikin/status/1652545398777708545?s=20">
+      Tweet by @jagarikin
+    </a>
+  </p>
 </template>
 
 <script>
@@ -13,6 +19,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
