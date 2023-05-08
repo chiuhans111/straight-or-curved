@@ -1,5 +1,8 @@
 # straight-or-curved
 
+Demo at:
+https://chiuhans111.github.io/straight-or-curved/index.html
+
 ## Project setup
 ```
 npm install
