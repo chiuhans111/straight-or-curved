@@ -9,14 +9,15 @@ function ballpath(
 ) {
     let points = []
 
+
     for (let i = 0; i < numBalls; i++) {
         let f = (factor + i * offsetFac) % 1
         let f3 = factor - Math.floor(factor + i * offsetFac)
         let f2 = (f * numSides) % 1
         let j = Math.floor(f * numSides)
 
-        let a0 = globalRotation + offsetRotation1 * i - offsetRotation2/offsetFac * f3
-        let da = (Math.PI * 2 + offsetRotation2/offsetFac) / numSides 
+        let a0 = globalRotation + offsetRotation1 * i / numBalls - offsetRotation2 / offsetFac / numBalls * f3
+        let da = (Math.PI * 2 + offsetRotation2 / offsetFac / numBalls) / numSides
         let a1 = j * da + a0
         let a2 = a1 + da
 
@@ -26,8 +27,8 @@ function ballpath(
         let x2 = Math.cos(a2)
         let y2 = Math.sin(a2)
 
-        let x = x2 * f2 + x1 * (1-f2)
-        let y = y2 * f2 + y1 * (1-f2)
+        let x = x2 * f2 + x1 * (1 - f2)
+        let y = y2 * f2 + y1 * (1 - f2)
 
         points.push([x, y])
     }
