@@ -1,0 +1,1 @@
+.input-row{margin:8px;padding:4px;display:flex;max-width:700px}.input-row span{display:inline-block;width:20%;max-width:150px;min-width:90px}.input-row input[type=range]{flex-grow:1}input[type=number]{max-width:60px}
